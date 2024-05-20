@@ -52,6 +52,18 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #2f8247;
 }
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+    margin-right: 5px;
+  }
+}
 
 /* Estilos para las imágenes */
 img {
@@ -95,4 +107,21 @@ footer {
   max-width: 800px; /* Ancho máximo del contenido del footer */
   margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
   text-align: center;
+}
+
+.redes-sociales {
+  margin-bottom: 20px; /* Espaciado inferior para separar los iconos del texto del footer */
+}
+
+.icono-red-social {
+  width: 40px; /* Tamaño de los iconos */
+  height: 40px;
+  margin: 0 10px; /* Espaciado entre los iconos */
+  display: inline-block; /* Asegurar que los íconos se alineen horizontalmente */
+  vertical-align: middle;
+  transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.icono-red-social:hover {
+  transform: scale(1.2); /* Aumentar el tamaño del icono al pasar el mouse */
 }
